@@ -1,0 +1,11 @@
+<div class="calendar-header" [ngClass]="{'last-item' : lastItem}">
+  <span>
+    {{day | transformDay: 'name'}}
+  </span>
+  <span>
+    {{day | transformDay:'number' }}
+  </span>
+</div>
+<div class="repeatable">
+  <app-week-repeatable-wrapper [day]="day"></app-week-repeatable-wrapper>
+</div>

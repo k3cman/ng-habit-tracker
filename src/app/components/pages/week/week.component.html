@@ -1,0 +1,8 @@
+<div class="title">
+  {{startDate | dateFormat}} - {{endDate | dateFormat}}
+</div>
+<div class="week-days">
+<ng-container *ngFor="let day of daysOfTheWeek">
+  <app-week-day [day]="day" [lastItem]="isLast(day)"></app-week-day>
+</ng-container>
+</div>

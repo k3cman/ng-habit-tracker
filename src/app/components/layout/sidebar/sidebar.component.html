@@ -1,0 +1,5 @@
+<nav class="sidebar-nav">
+  <div class="nav-item" *ngFor="let nav of navItems" [routerLink]="nav.path" [routerLinkActive]="'active'">
+    <mat-icon>{{nav.icon}}</mat-icon>
+  </div>
+</nav>
