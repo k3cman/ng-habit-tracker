@@ -1,5 +1,6 @@
-<nav class="sidebar-nav">
-  <div class="nav-item" *ngFor="let nav of navItems" [routerLink]="nav.path" [routerLinkActive]="'active'">
-    <mat-icon>{{nav.icon}}</mat-icon>
+<nav class="flex flex-col w-40 h-full bg-white text-gray-700 p-2 border-right">
+  <div class="flex flex-row items-center py-2 px-1 shadow-sm my-2" *ngFor="let nav of navItems;" [routerLink]="nav.path" [routerLinkActive]="'active'">
+    <mat-icon class="mr-1">{{nav.icon}}</mat-icon>
+    {{nav.path}}
   </div>
 </nav>
